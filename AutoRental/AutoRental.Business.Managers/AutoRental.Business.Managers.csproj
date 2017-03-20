@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F600A14-D4CD-4942-8513-55001C7BC452}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRental.Business.Managers</RootNamespace>
+    <AssemblyName>AutoRental.Business.Managers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ManagerBase.cs" />
+    <Compile Include="Managers\AccountManager.cs" />
+    <Compile Include="Managers\InventoryManager.cs" />
+    <Compile Include="Managers\RentalManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\NP.Core.Business\NP.Core.Business.csproj">
+      <Project>{c68250d6-e821-413f-bf72-b20d41d269e9}</Project>
+      <Name>NP.Core.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\NP.Core.Common.ServiceModel\NP.Core.Common.ServiceModel.csproj">
+      <Project>{6b70ba23-03c9-49e7-b689-92ad3bfae186}</Project>
+      <Name>NP.Core.Common.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\NP.Core.Common\NP.Core.Common.csproj">
+      <Project>{5ffc49f9-3acc-41ce-8514-23a367c936d0}</Project>
+      <Name>NP.Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Portable\Core.Common.Contracts\Core.Common.Contracts.csproj">
+      <Project>{C37F8723-3047-44A8-ABA1-680700FE1E77}</Project>
+      <Name>Core.Common.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Portable\Core.Common\Core.Common.csproj">
+      <Project>{f6bcff98-a714-4b7b-978f-23d812d1744a}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Business.Common\AutoRental.Business.Common.csproj">
+      <Project>{ce3fd931-1c72-4b54-874e-58db90639110}</Project>
+      <Name>AutoRental.Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Business.Contracts\AutoRental.Business.Contracts.csproj">
+      <Project>{efbcca9d-26e6-4b24-8ee7-dfe4f25121bd}</Project>
+      <Name>AutoRental.Business.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Business.Entities\AutoRental.Business.Entities.csproj">
+      <Project>{9E12553B-D554-4EED-B29C-716632A52CAF}</Project>
+      <Name>AutoRental.Business.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Common\AutoRental.Common.csproj">
+      <Project>{8b406b7d-908c-40a8-8e53-88a7e24bf03b}</Project>
+      <Name>AutoRental.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Data.Contracts\AutoRental.Data.Contracts.csproj">
+      <Project>{5490027e-242d-491d-839d-b284ce951f53}</Project>
+      <Name>AutoRental.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRental.Data\AutoRental.Data.csproj">
+      <Project>{54e450bc-6cf2-4ce2-9794-edf90ab6cd8a}</Project>
+      <Name>AutoRental.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,444 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{367F3755-7DE5-4A6A-B91C-D5AB0DA3F277}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6664C7F5-CB08-4188-B87F-467302D0E5FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7CA718F8-B653-4EC2-833C-05E0F43D8438}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResourceAccess", "ResourceAccess", "{FD85B216-B50E-450D-9629-D697FD8E8B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Data.Tests", "AutoRental.Data.Tests\AutoRental.Data.Tests.csproj", "{84C3DDB3-A136-4C2E-A546-9824FAED8512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Bootstrapper", "AutoRental.Business.Bootstrapper\AutoRental.Business.Bootstrapper.csproj", "{414720C1-8D2A-4963-A146-11DB3B7C23C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Data", "AutoRental.Data\AutoRental.Data.csproj", "{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Data.Contracts", "AutoRental.Data.Contracts\AutoRental.Data.Contracts.csproj", "{5490027E-242D-491D-839D-B284CE951F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Client.Entities", "AutoRental.Client.Entities\AutoRental.Client.Entities.csproj", "{038BDB90-C6B2-4D6F-B0B9-820E49C17067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Contracts", "AutoRental.Business.Contracts\AutoRental.Business.Contracts.csproj", "{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Managers", "AutoRental.Business.Managers\AutoRental.Business.Managers.csproj", "{9F600A14-D4CD-4942-8513-55001C7BC452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{378F4FED-5705-43F8-884D-169EED388630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Common", "AutoRental.Common\AutoRental.Common.csproj", "{8B406B7D-908C-40A8-8E53-88A7E24BF03B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Common.Contracts", "AutoRental.Common.Contracts\AutoRental.Common.Contracts.csproj", "{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Common", "AutoRental.Business.Common\AutoRental.Business.Common.csproj", "{CE3FD931-1C72-4B54-874E-58DB90639110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business", "AutoRental.Business\AutoRental.Business.csproj", "{5FC7BEEF-09BB-4F0F-9866-0253058E86BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Tests", "AutoRental.Business.Tests\AutoRental.Business.Tests.csproj", "{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Managers.Tests", "AutoRental.Business.Managers.Tests\AutoRental.Business.Managers.Tests.csproj", "{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Business.Entities", "AutoRental.Business.Entities\AutoRental.Business.Entities.csproj", "{9E12553B-D554-4EED-B29C-716632A52CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.ServiceHost.Tests", "AutoRental.ServiceHost.Tests\AutoRental.ServiceHost.Tests.csproj", "{BA3069F2-6C98-40E6-8F2B-FAE1694F293A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.ServiceHost.Console", "AutoRental.ServiceHost.Console\AutoRental.ServiceHost.Console.csproj", "{EBB6E673-B468-4D78-A647-462F74CBA95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.ServiceHost.WindowsService", "AutoRental.ServiceHost.WindowsService\AutoRental.ServiceHost.WindowsService.csproj", "{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Client.Proxies.Tests", "AutoRental.Client.Proxies.Tests\AutoRental.Client.Proxies.Tests.csproj", "{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Client.Contracts", "AutoRental.Client.Contracts\AutoRental.Client.Contracts.csproj", "{E87C64E8-17A3-4452-B1A7-85EE8B4B3818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Client.Bootstrapper", "AutoRental.Client.Bootstrapper\AutoRental.Client.Bootstrapper.csproj", "{CCA5B4CB-34A4-4A67-92D1-B682FF336C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Client.Proxies", "AutoRental.Client.Proxies\AutoRental.Client.Proxies.csproj", "{A2CCCE9C-9A27-451E-8C02-31568B890E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Web.Mvc", "AutoRental.Web.Mvc\AutoRental.Web.Mvc.csproj", "{69C554FA-CA11-4E5F-B779-04FB879C5807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Web.Mvc.Tests", "AutoRental.Web.Mvc.Tests\AutoRental.Web.Mvc.Tests.csproj", "{6B5F1C03-4B09-44EF-8838-13E8CCA4E380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Admin", "AutoRental.Admin\AutoRental.Admin.csproj", "{A8896D67-D60B-4167-8D1C-4B59F7B76AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRental.Admin.Tests", "AutoRental.Admin.Tests\AutoRental.Admin.Tests.csproj", "{A646C461-7E5F-479B-81C3-3EB16F2835A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxUI", "SandboxUI\SandboxUI.csproj", "{1F952D3B-89B0-46FD-8D9D-308027FE5BF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portable", "Portable", "{C45D8DCC-0E20-41EB-B3EB-9FDAA7425537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "..\..\Core\Portable\Core.Common\Core.Common.csproj", "{F6BCFF98-A714-4B7B-978F-23D812D1744A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common.Contracts", "..\..\Core\Portable\Core.Common.Contracts\Core.Common.Contracts.csproj", "{C37F8723-3047-44A8-ABA1-680700FE1E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NP.Core.Common", "..\..\Core\NP.Core.Common\NP.Core.Common.csproj", "{5FFC49F9-3ACC-41CE-8514-23A367C936D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NP.Core.Common.ServiceModel", "..\..\Core\NP.Core.Common.ServiceModel\NP.Core.Common.ServiceModel.csproj", "{6B70BA23-03C9-49E7-B689-92AD3BFAE186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NP.Core.Common.UI", "..\..\Core\NP.Core.Common.UI\NP.Core.Common.UI.csproj", "{58283593-A813-40FD-B4BF-E9FBA3787F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common.Tests", "..\..\Core\Portable\Core.Common.Tests\Core.Common.Tests.csproj", "{3492A5CB-8CB5-46FF-B307-FB6B85D594B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common.UI.Tests", "..\..\Core\Portable\Core.Common.UI.Tests\Core.Common.UI.Tests.csproj", "{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{C229ED35-F372-4DA9-95F1-C14D87F05808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NP.Core.Business", "..\..\Core\NP.Core.Business\NP.Core.Business.csproj", "{C68250D6-E821-413F-BF72-B20D41D269E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P.Core.Common", "..\..\Core\P.Core.Common\P.Core.Common.csproj", "{47AE1A86-03A1-4FDE-B70C-4B7F6578F399}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 37
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mrchrisok.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AutoRental.Data.Tests\\AutoRental.Data.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = AutoRental.sln
+		SccProjectName1 = AutoRental.Data.Tests
+		SccLocalPath1 = AutoRental.Data.Tests
+		SccProjectUniqueName2 = AutoRental.Business.Bootstrapper\\AutoRental.Business.Bootstrapper.csproj
+		SccProjectTopLevelParentUniqueName2 = AutoRental.sln
+		SccProjectName2 = AutoRental.Business.Bootstrapper
+		SccLocalPath2 = AutoRental.Business.Bootstrapper
+		SccProjectUniqueName3 = AutoRental.Data\\AutoRental.Data.csproj
+		SccProjectTopLevelParentUniqueName3 = AutoRental.sln
+		SccProjectName3 = AutoRental.Data
+		SccLocalPath3 = AutoRental.Data
+		SccProjectUniqueName4 = AutoRental.Data.Contracts\\AutoRental.Data.Contracts.csproj
+		SccProjectTopLevelParentUniqueName4 = AutoRental.sln
+		SccProjectName4 = AutoRental.Data.Contracts
+		SccLocalPath4 = AutoRental.Data.Contracts
+		SccProjectUniqueName5 = AutoRental.Client.Entities\\AutoRental.Client.Entities.csproj
+		SccProjectTopLevelParentUniqueName5 = AutoRental.sln
+		SccProjectName5 = AutoRental.Client.Entities
+		SccLocalPath5 = AutoRental.Client.Entities
+		SccProjectUniqueName6 = AutoRental.Business.Contracts\\AutoRental.Business.Contracts.csproj
+		SccProjectTopLevelParentUniqueName6 = AutoRental.sln
+		SccProjectName6 = AutoRental.Business.Contracts
+		SccLocalPath6 = AutoRental.Business.Contracts
+		SccProjectUniqueName7 = AutoRental.Business.Managers\\AutoRental.Business.Managers.csproj
+		SccProjectTopLevelParentUniqueName7 = AutoRental.sln
+		SccProjectName7 = AutoRental.Business.Managers
+		SccLocalPath7 = AutoRental.Business.Managers
+		SccProjectUniqueName8 = AutoRental.Common\\AutoRental.Common.csproj
+		SccProjectTopLevelParentUniqueName8 = AutoRental.sln
+		SccProjectName8 = AutoRental.Common
+		SccLocalPath8 = AutoRental.Common
+		SccProjectUniqueName9 = AutoRental.Common.Contracts\\AutoRental.Common.Contracts.csproj
+		SccProjectTopLevelParentUniqueName9 = AutoRental.sln
+		SccProjectName9 = AutoRental.Common.Contracts
+		SccLocalPath9 = AutoRental.Common.Contracts
+		SccProjectUniqueName10 = AutoRental.Business.Common\\AutoRental.Business.Common.csproj
+		SccProjectTopLevelParentUniqueName10 = AutoRental.sln
+		SccProjectName10 = AutoRental.Business.Common
+		SccLocalPath10 = AutoRental.Business.Common
+		SccProjectUniqueName11 = AutoRental.Business\\AutoRental.Business.csproj
+		SccProjectTopLevelParentUniqueName11 = AutoRental.sln
+		SccProjectName11 = AutoRental.Business
+		SccLocalPath11 = AutoRental.Business
+		SccProjectUniqueName12 = AutoRental.Business.Tests\\AutoRental.Business.Tests.csproj
+		SccProjectTopLevelParentUniqueName12 = AutoRental.sln
+		SccProjectName12 = AutoRental.Business.Tests
+		SccLocalPath12 = AutoRental.Business.Tests
+		SccProjectUniqueName13 = AutoRental.Business.Managers.Tests\\AutoRental.Business.Managers.Tests.csproj
+		SccProjectTopLevelParentUniqueName13 = AutoRental.sln
+		SccProjectName13 = AutoRental.Business.Managers.Tests
+		SccLocalPath13 = AutoRental.Business.Managers.Tests
+		SccProjectUniqueName14 = AutoRental.Business.Entities\\AutoRental.Business.Entities.csproj
+		SccProjectTopLevelParentUniqueName14 = AutoRental.sln
+		SccProjectName14 = AutoRental.Business.Entities
+		SccLocalPath14 = AutoRental.Business.Entities
+		SccProjectUniqueName15 = AutoRental.ServiceHost.Tests\\AutoRental.ServiceHost.Tests.csproj
+		SccProjectTopLevelParentUniqueName15 = AutoRental.sln
+		SccProjectName15 = AutoRental.ServiceHost.Tests
+		SccLocalPath15 = AutoRental.ServiceHost.Tests
+		SccProjectUniqueName16 = AutoRental.ServiceHost.Console\\AutoRental.ServiceHost.Console.csproj
+		SccProjectTopLevelParentUniqueName16 = AutoRental.sln
+		SccProjectName16 = AutoRental.ServiceHost.Console
+		SccLocalPath16 = AutoRental.ServiceHost.Console
+		SccProjectUniqueName17 = AutoRental.ServiceHost.WindowsService\\AutoRental.ServiceHost.WindowsService.csproj
+		SccProjectTopLevelParentUniqueName17 = AutoRental.sln
+		SccProjectName17 = AutoRental.ServiceHost.WindowsService
+		SccLocalPath17 = AutoRental.ServiceHost.WindowsService
+		SccProjectUniqueName18 = AutoRental.Client.Proxies.Tests\\AutoRental.Client.Proxies.Tests.csproj
+		SccProjectTopLevelParentUniqueName18 = AutoRental.sln
+		SccProjectName18 = AutoRental.Client.Proxies.Tests
+		SccLocalPath18 = AutoRental.Client.Proxies.Tests
+		SccProjectUniqueName19 = AutoRental.Client.Contracts\\AutoRental.Client.Contracts.csproj
+		SccProjectTopLevelParentUniqueName19 = AutoRental.sln
+		SccProjectName19 = AutoRental.Client.Contracts
+		SccLocalPath19 = AutoRental.Client.Contracts
+		SccProjectUniqueName20 = AutoRental.Client.Bootstrapper\\AutoRental.Client.Bootstrapper.csproj
+		SccProjectTopLevelParentUniqueName20 = AutoRental.sln
+		SccProjectName20 = AutoRental.Client.Bootstrapper
+		SccLocalPath20 = AutoRental.Client.Bootstrapper
+		SccProjectUniqueName21 = AutoRental.Client.Proxies\\AutoRental.Client.Proxies.csproj
+		SccProjectTopLevelParentUniqueName21 = AutoRental.sln
+		SccProjectName21 = AutoRental.Client.Proxies
+		SccLocalPath21 = AutoRental.Client.Proxies
+		SccProjectUniqueName22 = AutoRental.Web.Mvc\\AutoRental.Web.Mvc.csproj
+		SccProjectTopLevelParentUniqueName22 = AutoRental.sln
+		SccProjectName22 = AutoRental.Web.Mvc
+		SccLocalPath22 = AutoRental.Web.Mvc
+		SccProjectUniqueName23 = AutoRental.Web.Mvc.Tests\\AutoRental.Web.Mvc.Tests.csproj
+		SccProjectTopLevelParentUniqueName23 = AutoRental.sln
+		SccProjectName23 = AutoRental.Web.Mvc.Tests
+		SccLocalPath23 = AutoRental.Web.Mvc.Tests
+		SccProjectUniqueName24 = AutoRental.Admin\\AutoRental.Admin.csproj
+		SccProjectTopLevelParentUniqueName24 = AutoRental.sln
+		SccProjectName24 = AutoRental.Admin
+		SccLocalPath24 = AutoRental.Admin
+		SccProjectUniqueName25 = AutoRental.Admin.Tests\\AutoRental.Admin.Tests.csproj
+		SccProjectTopLevelParentUniqueName25 = AutoRental.sln
+		SccProjectName25 = AutoRental.Admin.Tests
+		SccLocalPath25 = AutoRental.Admin.Tests
+		SccProjectUniqueName26 = SandboxUI\\SandboxUI.csproj
+		SccProjectTopLevelParentUniqueName26 = AutoRental.sln
+		SccProjectName26 = SandboxUI
+		SccLocalPath26 = SandboxUI
+		SccProjectUniqueName27 = ..\\..\\Core\\Portable\\Core.Common\\Core.Common.csproj
+		SccProjectTopLevelParentUniqueName27 = AutoRental.sln
+		SccProjectName27 = ../../Core/Portable/Core.Common
+		SccLocalPath27 = ..\\..\\Core\\Portable\\Core.Common
+		SccProjectUniqueName28 = ..\\..\\Core\\Portable\\Core.Common.Contracts\\Core.Common.Contracts.csproj
+		SccProjectTopLevelParentUniqueName28 = AutoRental.sln
+		SccProjectName28 = ../../Core/Portable/Core.Common.Contracts
+		SccLocalPath28 = ..\\..\\Core\\Portable\\Core.Common.Contracts
+		SccProjectUniqueName29 = ..\\..\\Core\\NP.Core.Common\\NP.Core.Common.csproj
+		SccProjectTopLevelParentUniqueName29 = AutoRental.sln
+		SccProjectName29 = ../../Core/NP.Core.Common
+		SccLocalPath29 = ..\\..\\Core\\NP.Core.Common
+		SccProjectUniqueName30 = ..\\..\\Core\\NP.Core.Common.ServiceModel\\NP.Core.Common.ServiceModel.csproj
+		SccProjectTopLevelParentUniqueName30 = AutoRental.sln
+		SccProjectName30 = ../../Core/NP.Core.Common.ServiceModel
+		SccLocalPath30 = ..\\..\\Core\\NP.Core.Common.ServiceModel
+		SccProjectUniqueName31 = ..\\..\\Core\\NP.Core.Common.UI\\NP.Core.Common.UI.csproj
+		SccProjectTopLevelParentUniqueName31 = AutoRental.sln
+		SccProjectName31 = ../../Core/NP.Core.Common.UI
+		SccLocalPath31 = ..\\..\\Core\\NP.Core.Common.UI
+		SccProjectUniqueName32 = ..\\..\\Core\\Portable\\Core.Common.Tests\\Core.Common.Tests.csproj
+		SccProjectTopLevelParentUniqueName32 = AutoRental.sln
+		SccProjectName32 = ../../Core/Portable/Core.Common.Tests
+		SccLocalPath32 = ..\\..\\Core\\Portable\\Core.Common.Tests
+		SccProjectUniqueName33 = ..\\..\\Core\\Portable\\Core.Common.UI.Tests\\Core.Common.UI.Tests.csproj
+		SccProjectTopLevelParentUniqueName33 = AutoRental.sln
+		SccProjectName33 = ../../Core/Portable/Core.Common.UI.Tests
+		SccLocalPath33 = ..\\..\\Core\\Portable\\Core.Common.UI.Tests
+		SccProjectUniqueName34 = WindowsFormsApplication1\\WindowsFormsApplication1.csproj
+		SccProjectTopLevelParentUniqueName34 = AutoRental.sln
+		SccProjectName34 = WindowsFormsApplication1
+		SccLocalPath34 = WindowsFormsApplication1
+		SccProjectUniqueName35 = ..\\..\\Core\\NP.Core.Business\\NP.Core.Business.csproj
+		SccProjectTopLevelParentUniqueName35 = AutoRental.sln
+		SccProjectName35 = ../../Core/NP.Core.Business
+		SccLocalPath35 = ..\\..\\Core\\NP.Core.Business
+		SccProjectUniqueName36 = ..\\..\\Core\\P.Core.Common\\P.Core.Common.csproj
+		SccProjectTopLevelParentUniqueName36 = AutoRental.sln
+		SccProjectName36 = ../../Core/P.Core.Common
+		SccLocalPath36 = ..\\..\\Core\\P.Core.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84C3DDB3-A136-4C2E-A546-9824FAED8512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C3DDB3-A136-4C2E-A546-9824FAED8512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C3DDB3-A136-4C2E-A546-9824FAED8512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C3DDB3-A136-4C2E-A546-9824FAED8512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414720C1-8D2A-4963-A146-11DB3B7C23C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414720C1-8D2A-4963-A146-11DB3B7C23C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414720C1-8D2A-4963-A146-11DB3B7C23C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414720C1-8D2A-4963-A146-11DB3B7C23C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5490027E-242D-491D-839D-B284CE951F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5490027E-242D-491D-839D-B284CE951F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5490027E-242D-491D-839D-B284CE951F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5490027E-242D-491D-839D-B284CE951F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038BDB90-C6B2-4D6F-B0B9-820E49C17067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038BDB90-C6B2-4D6F-B0B9-820E49C17067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038BDB90-C6B2-4D6F-B0B9-820E49C17067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038BDB90-C6B2-4D6F-B0B9-820E49C17067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F600A14-D4CD-4942-8513-55001C7BC452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F600A14-D4CD-4942-8513-55001C7BC452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F600A14-D4CD-4942-8513-55001C7BC452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F600A14-D4CD-4942-8513-55001C7BC452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B406B7D-908C-40A8-8E53-88A7E24BF03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B406B7D-908C-40A8-8E53-88A7E24BF03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B406B7D-908C-40A8-8E53-88A7E24BF03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B406B7D-908C-40A8-8E53-88A7E24BF03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3FD931-1C72-4B54-874E-58DB90639110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3FD931-1C72-4B54-874E-58DB90639110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3FD931-1C72-4B54-874E-58DB90639110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3FD931-1C72-4B54-874E-58DB90639110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC7BEEF-09BB-4F0F-9866-0253058E86BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC7BEEF-09BB-4F0F-9866-0253058E86BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC7BEEF-09BB-4F0F-9866-0253058E86BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC7BEEF-09BB-4F0F-9866-0253058E86BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E12553B-D554-4EED-B29C-716632A52CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E12553B-D554-4EED-B29C-716632A52CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E12553B-D554-4EED-B29C-716632A52CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E12553B-D554-4EED-B29C-716632A52CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3069F2-6C98-40E6-8F2B-FAE1694F293A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3069F2-6C98-40E6-8F2B-FAE1694F293A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3069F2-6C98-40E6-8F2B-FAE1694F293A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3069F2-6C98-40E6-8F2B-FAE1694F293A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB6E673-B468-4D78-A647-462F74CBA95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB6E673-B468-4D78-A647-462F74CBA95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB6E673-B468-4D78-A647-462F74CBA95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB6E673-B468-4D78-A647-462F74CBA95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87C64E8-17A3-4452-B1A7-85EE8B4B3818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87C64E8-17A3-4452-B1A7-85EE8B4B3818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87C64E8-17A3-4452-B1A7-85EE8B4B3818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87C64E8-17A3-4452-B1A7-85EE8B4B3818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA5B4CB-34A4-4A67-92D1-B682FF336C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA5B4CB-34A4-4A67-92D1-B682FF336C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA5B4CB-34A4-4A67-92D1-B682FF336C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA5B4CB-34A4-4A67-92D1-B682FF336C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CCCE9C-9A27-451E-8C02-31568B890E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CCCE9C-9A27-451E-8C02-31568B890E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CCCE9C-9A27-451E-8C02-31568B890E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CCCE9C-9A27-451E-8C02-31568B890E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C554FA-CA11-4E5F-B779-04FB879C5807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C554FA-CA11-4E5F-B779-04FB879C5807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C554FA-CA11-4E5F-B779-04FB879C5807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C554FA-CA11-4E5F-B779-04FB879C5807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5F1C03-4B09-44EF-8838-13E8CCA4E380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5F1C03-4B09-44EF-8838-13E8CCA4E380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5F1C03-4B09-44EF-8838-13E8CCA4E380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5F1C03-4B09-44EF-8838-13E8CCA4E380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8896D67-D60B-4167-8D1C-4B59F7B76AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8896D67-D60B-4167-8D1C-4B59F7B76AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8896D67-D60B-4167-8D1C-4B59F7B76AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8896D67-D60B-4167-8D1C-4B59F7B76AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A646C461-7E5F-479B-81C3-3EB16F2835A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A646C461-7E5F-479B-81C3-3EB16F2835A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A646C461-7E5F-479B-81C3-3EB16F2835A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A646C461-7E5F-479B-81C3-3EB16F2835A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F952D3B-89B0-46FD-8D9D-308027FE5BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F952D3B-89B0-46FD-8D9D-308027FE5BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F952D3B-89B0-46FD-8D9D-308027FE5BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F952D3B-89B0-46FD-8D9D-308027FE5BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BCFF98-A714-4B7B-978F-23D812D1744A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BCFF98-A714-4B7B-978F-23D812D1744A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BCFF98-A714-4B7B-978F-23D812D1744A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BCFF98-A714-4B7B-978F-23D812D1744A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37F8723-3047-44A8-ABA1-680700FE1E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37F8723-3047-44A8-ABA1-680700FE1E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37F8723-3047-44A8-ABA1-680700FE1E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37F8723-3047-44A8-ABA1-680700FE1E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFC49F9-3ACC-41CE-8514-23A367C936D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFC49F9-3ACC-41CE-8514-23A367C936D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFC49F9-3ACC-41CE-8514-23A367C936D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFC49F9-3ACC-41CE-8514-23A367C936D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B70BA23-03C9-49E7-B689-92AD3BFAE186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B70BA23-03C9-49E7-B689-92AD3BFAE186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B70BA23-03C9-49E7-B689-92AD3BFAE186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B70BA23-03C9-49E7-B689-92AD3BFAE186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58283593-A813-40FD-B4BF-E9FBA3787F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58283593-A813-40FD-B4BF-E9FBA3787F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58283593-A813-40FD-B4BF-E9FBA3787F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58283593-A813-40FD-B4BF-E9FBA3787F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3492A5CB-8CB5-46FF-B307-FB6B85D594B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3492A5CB-8CB5-46FF-B307-FB6B85D594B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3492A5CB-8CB5-46FF-B307-FB6B85D594B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3492A5CB-8CB5-46FF-B307-FB6B85D594B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C229ED35-F372-4DA9-95F1-C14D87F05808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C229ED35-F372-4DA9-95F1-C14D87F05808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C229ED35-F372-4DA9-95F1-C14D87F05808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C229ED35-F372-4DA9-95F1-C14D87F05808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68250D6-E821-413F-BF72-B20D41D269E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68250D6-E821-413F-BF72-B20D41D269E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68250D6-E821-413F-BF72-B20D41D269E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68250D6-E821-413F-BF72-B20D41D269E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AE1A86-03A1-4FDE-B70C-4B7F6578F399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AE1A86-03A1-4FDE-B70C-4B7F6578F399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AE1A86-03A1-4FDE-B70C-4B7F6578F399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AE1A86-03A1-4FDE-B70C-4B7F6578F399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84C3DDB3-A136-4C2E-A546-9824FAED8512} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{414720C1-8D2A-4963-A146-11DB3B7C23C8} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{54E450BC-6CF2-4CE2-9794-EDF90AB6CD8A} = {FD85B216-B50E-450D-9629-D697FD8E8B9C}
+		{5490027E-242D-491D-839D-B284CE951F53} = {FD85B216-B50E-450D-9629-D697FD8E8B9C}
+		{038BDB90-C6B2-4D6F-B0B9-820E49C17067} = {367F3755-7DE5-4A6A-B91C-D5AB0DA3F277}
+		{EFBCCA9D-26E6-4B24-8EE7-DFE4F25121BD} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{9F600A14-D4CD-4942-8513-55001C7BC452} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{8B406B7D-908C-40A8-8E53-88A7E24BF03B} = {378F4FED-5705-43F8-884D-169EED388630}
+		{D7B5A109-2BAC-4A71-AD5B-24E577A9E60A} = {378F4FED-5705-43F8-884D-169EED388630}
+		{CE3FD931-1C72-4B54-874E-58DB90639110} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{5FC7BEEF-09BB-4F0F-9866-0253058E86BC} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{FAFA3BA5-EA0E-441D-BF11-16B217DE6F53} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{EDD70D7B-4987-4AB1-B190-C1EDE50ACC44} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{9E12553B-D554-4EED-B29C-716632A52CAF} = {15E8072A-FAF5-4BF3-9E89-E8B0232C5EB5}
+		{BA3069F2-6C98-40E6-8F2B-FAE1694F293A} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{EBB6E673-B468-4D78-A647-462F74CBA95B} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{4B5AD6FB-D590-4BCE-89DB-3D859DC258DE} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{4E4EC091-C922-44EC-8D40-A2B53A1B2FCF} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{E87C64E8-17A3-4452-B1A7-85EE8B4B3818} = {367F3755-7DE5-4A6A-B91C-D5AB0DA3F277}
+		{CCA5B4CB-34A4-4A67-92D1-B682FF336C80} = {367F3755-7DE5-4A6A-B91C-D5AB0DA3F277}
+		{A2CCCE9C-9A27-451E-8C02-31568B890E19} = {367F3755-7DE5-4A6A-B91C-D5AB0DA3F277}
+		{69C554FA-CA11-4E5F-B779-04FB879C5807} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{6B5F1C03-4B09-44EF-8838-13E8CCA4E380} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{A8896D67-D60B-4167-8D1C-4B59F7B76AF1} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{A646C461-7E5F-479B-81C3-3EB16F2835A2} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{1F952D3B-89B0-46FD-8D9D-308027FE5BF6} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{C45D8DCC-0E20-41EB-B3EB-9FDAA7425537} = {97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}
+		{F6BCFF98-A714-4B7B-978F-23D812D1744A} = {C45D8DCC-0E20-41EB-B3EB-9FDAA7425537}
+		{C37F8723-3047-44A8-ABA1-680700FE1E77} = {C45D8DCC-0E20-41EB-B3EB-9FDAA7425537}
+		{5FFC49F9-3ACC-41CE-8514-23A367C936D0} = {97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}
+		{6B70BA23-03C9-49E7-B689-92AD3BFAE186} = {97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}
+		{58283593-A813-40FD-B4BF-E9FBA3787F1C} = {97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}
+		{3492A5CB-8CB5-46FF-B307-FB6B85D594B1} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{F9FC3BD5-2E0F-4BE7-AF5B-5FD91E583253} = {6664C7F5-CB08-4188-B87F-467302D0E5FD}
+		{C229ED35-F372-4DA9-95F1-C14D87F05808} = {406526EA-A0F9-42C9-B3AC-AD6BE38F15FF}
+		{C68250D6-E821-413F-BF72-B20D41D269E9} = {97AF3435-5375-44D5-84C6-3C0F5C0CEA6C}
+		{47AE1A86-03A1-4FDE-B70C-4B7F6578F399} = {C45D8DCC-0E20-41EB-B3EB-9FDAA7425537}
+	EndGlobalSection
+EndGlobal

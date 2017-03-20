@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/typeahead.css" rel="stylesheet" />
+    <link href="sandbox.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-2.1.3.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap3-typeahead.min.js"></script>
+
+</head>
+<body>
+
+    <input id="type-ahead" type="text" class="form-control twitter-typeahead" />
+
+    <script>
+        $(function () {
+            $('.twitter-typeahead').typeahead({
+                hint: true,
+                highlight: true
+            },
+            {
+                local: ['Giants', 'Jets', 'Raiders', 'Bears']
+            });
+        });
+    </script>
+
+</body>
+</html>

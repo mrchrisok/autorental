@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="sandbox.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container row">
+        <form class="form-horizontal">
+            <div class="form-group row">
+                <label for="fullname" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" id="fullname" name="fullname" class="form-control" /><br />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="comments" class="col-sm-2 control-label">Comments</label>
+                <div class="col-sm-10">
+                    <textarea name="comments" id="comments" rows="5" cols="40" class="form-control"></textarea><br />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="luckynumber" class="col-sm-2 control-label">Lucky Number</label>
+                <div class="col-sm-10">
+                    <select name="luckynumber" id="luckynumber" class="form-control">
+                        <option>double zero</option>
+                        <option>seven</option>
+                        <option>thirteen</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="dog" />Own a dog</label><!--<br />-->
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="cat" />Own a cat</label><!--<br />-->
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="owned" />Owned by a cat</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <span>Your favorite weather?</span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="radio"> <label><input type="radio" name="count" value="hot" />hot</label><br /></div>
+                    <div class="radio"> <label><input type="radio" name="count" value="cold" />cold</label><br /></div>
+                    <div class="radio"> <label><input type="radio" name="count" value="rainy" />rainy</label><br /></div>
+                </div>
+            </div>
+
+            <br />
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

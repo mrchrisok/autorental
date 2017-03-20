@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Rental History";
+    ViewBag.Name = "CustomerActions";
+}
+@section scripts
+{
+    @Html.IncludeVersionedJS(Url.Content("~/Binding/Models/RentalModel.js"))
+    @Html.IncludeVersionedJS(Url.Content("~/Binding/ViewModels/RentalHistoryViewModel.js"))
+}
+@section ko_apply
+{
+    var viewModel = new AutoRental.RentalHistoryViewModel();
+    ko.applyBindingsWithValidation(viewModel, $("#rentalhistory")[0],
+    { insertMessages: false, messagesOnModified: false, grouping: { deep: true }});
+}
+<br />
+<h2>@ViewBag.Title</h2>
+
+<div id="rentalhistory">
+    <div data-bind="visible: rentals().length > 0">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Car</th>
+                    <th>Rental Date</th>
+                    <th>Due Date</th>
+                    <th>Return Date</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: rentals">
+                <tr style="vertical-align: central">
+                    <td data-bind="text: Car" />
+                    <td data-bind="date: DateRented" />
+                    <td data-bind="date: DateDue" />
+                    <td data-bind="date: DateReturned" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div data-bind="visible: rentals().length == 0">
+        <h3>You do not have any rentals on file.</h3>
+    </div>
+</div>

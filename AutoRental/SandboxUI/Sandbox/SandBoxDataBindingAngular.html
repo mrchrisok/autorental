@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html ng-app="ocoApp">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="sandbox.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-2.1.3.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.js"></script>
+
+</head>
+<body>
+    <div id="controller" ng-controller="PersonController">
+        <form id="person-form" class="form-horizontal row">
+
+            <div class="form-group">
+                <label for="fullname" class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="fullname" name="fullname" class="form-control"
+                           ng-model="person.fullname" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age" class="col-sm-3 control-label">Age</label>
+                <div class="col-sm-9">
+                    <input type="text" id="age" name="age" class="form-control"
+                           ng-model="person.age" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        // angular databinding //////////////////////////////
+        var ocoApp = angular.module('ocoApp', []);
+
+        ocoApp.controller('PersonController', ['$scope',
+            function ($scope) {
+                $scope.person = {
+                    fullname: "Octavius Aurelius",
+                    age: 22
+                };
+            }
+        ]);
+
+        // populate the form .. done by the controller
+
+        // form submit handler
+        $('#person-form').submit(function (event) {
+
+            // ng databinding pushes element values into the object on submit
+            var scope = angular.element($('#controller')).scope();
+            alert('name: ' + scope.person.fullname + ' age: ' + scope.person.age);
+            event.preventDefault(); // suppresses the postback
+        });
+    </script>
+</body>
+</html>

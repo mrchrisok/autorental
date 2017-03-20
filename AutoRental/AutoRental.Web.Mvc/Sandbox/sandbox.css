@@ -1,0 +1,25 @@
+﻿body {
+    padding: 30px;
+    margin: 40px;
+}
+
+#leftPanel {
+    background-color:#dbe3ff;
+    height:650px;
+}
+
+#mainContent {
+   background-color: #fff5d4;
+   height:650px;
+   padding-top: 20px;
+}
+
+img.ocoresize{
+   max-width:25%;
+   max-height:25%;
+}
+
+.error{
+    color: red;
+    font-size: 0.8em;
+}

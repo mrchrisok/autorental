@@ -1,0 +1,9 @@
+﻿
+@*oco: this div is toggled to visible only if the submitted model data fails validation*@
+@*oco: see Login view for its use by an Html.Partial()*@
+<div data-bind="visible: viewModelHelper.modelIsValid() == false" class="alert alert-danger fade in">
+    <h4 class="alert alert-heading">Errors!</h4>
+    <ul data-bind="foreach: viewModelHelper.modelErrors">
+        <li data-bind="text: $data"></li>
+    </ul>
+</div>
